@@ -6,15 +6,15 @@ function randomFruitChoice(array) {
 
 // Remove the first matching item from an array, otherwise return undefined
 function removeItem(array, itemToRemove) {
-  let existingItem = array.indexOf(itemToRemove);
+  let existingItemIndex = array.indexOf(itemToRemove);
 
   // If item does not exist return undefined
-  if (existingItem === -1) {
+  if (existingItemIndex === -1) {
     return undefined;
   }
 
   // Else the item must exist, filter out the existing item, keep all other items
-  return array.filter((element, index) => index != existingItem);
+  return array.filter((element, index) => index !== existingItemIndex);
 }
 
 export {randomFruitChoice, removeItem};

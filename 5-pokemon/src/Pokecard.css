@@ -5,10 +5,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
-  border: 2px solid white;
+  margin: 2rem;
+  border: 3px solid white;
+  border-radius: 4px;
+  transition: all .24s;
+}
+
+.pokecard-container:hover {
+  transform: scale(1.075);
 }
 
 .poke-image {
   width: 140px;
+}
+
+.exp-number {
+  /* color: #61dafb; */
+  color: gold;
 }
