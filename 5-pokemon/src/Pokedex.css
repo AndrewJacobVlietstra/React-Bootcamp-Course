@@ -3,4 +3,20 @@
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   align-items: center;
+  margin-bottom: 3rem;
+}
+
+.team-exp-container {
+  position: relative;
+  bottom: 3rem;
+  width: 100%;
+  max-width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  
+}
+
+.team-exp-span {
+  color: aqua;
 }
