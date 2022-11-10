@@ -40,3 +40,12 @@ export function calculateWinningHand(arr1, arr2) {
 
   return {firstHandEXPTotal, secondHandEXPTotal};
 }
+
+export function capitalize(str) {
+  let firstCharacter = str[0];
+  let tempString = str.slice(1, str.length);
+
+  let capitalizedString = firstCharacter.toUpperCase() + tempString;
+
+  return capitalizedString;
+}

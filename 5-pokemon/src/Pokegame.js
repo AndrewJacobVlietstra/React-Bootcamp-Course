@@ -7,10 +7,6 @@ const Pokegame = () => {
   let { firstHand, secondHand } = drawHands(pokeData);
   let { firstHandEXPTotal, secondHandEXPTotal } = calculateWinningHand(firstHand, secondHand);
 
-  
-
-
-
   return (
     <div className=''>
       <Pokedex drawnPokeData={firstHand} teamEXP={firstHandEXPTotal} opponentEXP={secondHandEXPTotal} />
