@@ -49,3 +49,12 @@ export function capitalize(str) {
 
   return capitalizedString;
 }
+
+export function padToThree(id) {
+  // id starts out as number so it must be converted to string in order to pad it
+  let stringID = String(id);
+
+  let paddedStringID = stringID.padStart(3, '0');
+
+  return paddedStringID;
+}

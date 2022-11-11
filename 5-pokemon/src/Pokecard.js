@@ -1,9 +1,12 @@
 import React from "react";
 import './Pokecard.css';
-import { capitalize } from "./pokeFunctions";
+import { capitalize, padToThree } from "./pokeFunctions";
 
 const Pokecard = ({id, name, type, exp}) => {
-  const pokeImgSrc = `https:raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
+  const paddedID = padToThree(id);
+
+  // const pokeImgSrc = `https:raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
+  const pokeImgSrc = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${paddedID}.png`
 
   let capitalizedType = capitalize(type);
 
